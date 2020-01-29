@@ -1,29 +1,29 @@
 - hosts: all
   tasks :
-     - name : "DeployVM1"
+     - name : "DeployVM"
        proxmox_kvm:
           api_user     : root@pam
           api_password : Prox2020
           api_host     : 192.168.31.128
-          name         : linuxTEST1
+          name         : test1
           node         : prox13
           state        : started
 
-     - name : "DeployVM2"
+     - name : "DeployVM"
        proxmox_kvm:
           api_user     : root@pam
           api_password : Prox2020
           api_host     : 192.168.31.130
-          name         : linuxTEST2
+          name         : test2
           node         : Prox13
           state        : started
 
-     - name : "DeployVM3"
+     - name : "DeployVM"
        proxmox_kvm:
           api_user     : root@pam
           api_password : Prox2020
           api_host     : 192.168.31.130
-          name         : linuxTEST3
+          name         : test3
           node         : Prox-13
           state        : started
 
