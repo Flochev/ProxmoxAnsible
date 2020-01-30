@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+    - name: "creer l'utilisateur itesciadmin"
+      user:
+        name: itesciadmin
+        comment: itesciadmin
+        uid: 1000
+        shell: /bin/bash
+        password: '$6$ED2f9WOOWga/$oANrCW8Ar0GZDZ1gYzob3Mqm/es8q7KeTvpom9BFY1kW81ntVHNSdJVZ/.rETA6Nyi9sOPyz.FXj1G1TMMCdG0'
+
