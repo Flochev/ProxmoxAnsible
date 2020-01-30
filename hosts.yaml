@@ -1,8 +1,7 @@
-superviseurs:
-        hosts:
-                192.168.31.128:
-                192.168.31.130:
-                192.168.31.133:
-
-
-                        #Modif test
+hyperviseur:
+  hosts:
+   192.168.31.128:
+   192.168.31.130:
+   192.168.31.133:
+  vars:
+         ansible_ssh_user: root
